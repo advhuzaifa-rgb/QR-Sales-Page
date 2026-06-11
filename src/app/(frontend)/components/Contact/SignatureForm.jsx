@@ -87,22 +87,25 @@ const SignatureForm = () => {
     phoneValid &&
     data.termsAccepted
 
-  const handleSubmit = async () => {
-    if (!isValid || status === 'submitting') return
-    setStatus('submitting')
-    try {
-      const res = await fetch('/api/signature-partners', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
-      if (!res.ok) throw new Error('Request failed')
-      setData(initialData)
-      setStatus('success')
-    } catch (err) {
-      setStatus('error')
-    }
+const handleSubmit = async () => {
+  if (!isValid || status === 'submitting') return
+  setStatus('submitting')
+  try {
+    const payload = Object.fromEntries(
+      Object.entries(data).filter(([, value]) => value !== ''),
+    )
+    const res = await fetch('/api/signature-partners', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+    if (!res.ok) throw new Error('Request failed')
+    setData(initialData)
+    setStatus('success')
+  } catch (err) {
+    setStatus('error')
   }
+}
 
   return (
     <div className={styles.form}>
