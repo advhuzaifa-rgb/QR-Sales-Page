@@ -1,0 +1,27 @@
+:root {
+  --fs-46: clamp(1.25rem, 1.64vi + 0.91rem, 2.88rem);
+  --fs-32: clamp(1.25rem, 0.75vi + 1.09rem, 2rem);
+  --fs-25: clamp(0.88rem, 0.69vi + 0.73rem, 1.56rem);
+
+  --color-bg: #f5f5f5;
+  --color-text: #222;
+  --color-accent: #0070f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  font-family: var(--font-poppins); /* default */
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
