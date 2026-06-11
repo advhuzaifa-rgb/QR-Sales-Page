@@ -9,7 +9,7 @@ const Contact = () => {
         <div className={styles.left}>
           <h2 className={styles.heading}>
             Become a<br />
-            <span className={styles.script}>Signature</span> Partners
+            <span className={styles.script}>Signature</span> Partner
           </h2>
           <p className={styles.desc}>
             Unlock exclusive privileges, preferred commissions, and access to The World of Al Huzaifa. Become a Signature Partner today.

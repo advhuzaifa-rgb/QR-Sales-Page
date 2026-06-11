@@ -25,7 +25,7 @@ const Landing = () => {
             <div className={styles.intro}>
               <p className={styles.eyebrow}>A PRIVILEGED INVITATION</p>
               <h1 className={styles.heading}>
-                The <span className={styles.script}>Signature</span> Partners Card
+                The <span className={styles.script}>Signature</span> Partner Card
               </h1>
             </div>
 

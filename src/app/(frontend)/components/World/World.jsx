@@ -8,7 +8,7 @@ const World = () => {
         <div className={styles.MainConatiner}>
             <div className={styles.top}>
                 <h3>The <span className={styles.wod}>World</span> of Al Huzaifa</h3>
-                <p>For nearly five decades, Al Huzaifa has shaped exceptional living experiences through furniture, interior design, and curated spaces. The Signature Partners Card extends that legacy to a select network of professionals who share our passion for design, quality, and lasting relationships.</p>
+                <p>For nearly five decades, Al Huzaifa has shaped exceptional living experiences through furniture, interior design, and curated spaces. The Signature Partner Card extends that legacy to a select network of professionals who share our passion for design, quality, and lasting relationships.</p>
 
             </div>
             <div className={styles.bottom}>
