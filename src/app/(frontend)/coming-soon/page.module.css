@@ -180,3 +180,26 @@
     text-align: center;
   }
 }
+.qrButton {
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background: var(--gold);
+  color: #100d0b;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.qrButton:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.qrButton:active {
+  transform: translateY(0);
+}
