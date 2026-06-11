@@ -7,7 +7,7 @@ const TextContainer = () => {
       <div className={styles.main}>
         <div className={styles.mainConatiner}>
           <p>
-            Reserved for our Signature Partner. Your gateway to exclusive privileges, curated
+            Your gateway to exclusive privileges, curated
             rewards, and elevated experiences with Al Huzaifa.
           </p>
         </div>
