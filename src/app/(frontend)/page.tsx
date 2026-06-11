@@ -5,7 +5,13 @@ import React from 'react'
 import { fileURLToPath } from 'url'
 import './globals.css'
 import config from '@/payload.config'
-
+import Footer from './components/Footer/Footer'
+import TextContainer from './components/TextContainer/TextContainer'
+import World from './components/World/World'
+import Beyond from './components/Beyond/Beyond'
+import Contact from './components/Contact/Contact'
+import Privileges from './components/Privileges/Privileges'
+import Landing from './components/Landing/Landing'
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -17,6 +23,15 @@ export default async function HomePage() {
 
   return (
    <>
+   <Landing />
+   <TextContainer />
+<Privileges />
+   <Beyond />
+   
+   <World />
+   <Contact />
+   <div className='space'></div>
+   <Footer />
    </>
   )
 }

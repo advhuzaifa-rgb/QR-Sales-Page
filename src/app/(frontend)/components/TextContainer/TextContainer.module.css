@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffff;
+    padding:
+  clamp(80px, 8vw, 133px)
+  0;
+}
+.mainConatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 937px;
+}
+.mainConatiner p{
+   font-family: var(--font-pp-hatton);
+  font-weight: 400;
+  font-size: var(--fs-32);
+  color: #414141;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width:640px){
+    .main{
+        padding: 80px 24px;
+    }
+    .mainConatiner p{
+        font-size: 20px;
+        max-width: 100%;
+    }
+}
+@media (min-width:641px) and (max-width: 1040px){
+    .mainConatiner{
+        max-width: 600px;
+    }
+}

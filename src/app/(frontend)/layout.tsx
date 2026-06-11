@@ -24,10 +24,10 @@ const modernline = localFont({
   weight: '700',
   display: 'swap',
 })
+
 export const metadata: Metadata = {
   title: 'Al Huzaifa',
-  description:
-    'Al Huzaifa ',
+  description: 'Al Huzaifa',
   keywords: [
     'interior design Dubai',
     'luxury interior design UAE',
@@ -51,16 +51,15 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
   },
   openGraph: {
-    title: 'Al Huzaifa ',
-    description:
-      'Al Huzaifa ',
-    siteName: 'Al Huzaifa ',
+    title: 'Al Huzaifa',
+    description: 'Al Huzaifa',
+    siteName: 'Al Huzaifa',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Al Huzaifa ',
+        alt: 'Al Huzaifa',
       },
     ],
     locale: 'en_AE',
@@ -68,10 +67,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Al Huzaifa ',
-    description:
-      'Al Huzaifa',
-    images: ['/og-image.jpg'],
+    title: 'Al Huzaifa',
+    description: 'Al Huzaifa',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -79,11 +77,12 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function RootLayout(props: { children: React.ReactNode }) {
-  const { children } = props
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${ppHatton.variable} ${modernline.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${ppHatton.variable} ${modernline.variable}`}
+    >
       <body>
         <main>{children}</main>
       </body>
