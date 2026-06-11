@@ -26,22 +26,27 @@ const modernline = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Al Huzaifa',
-  description: 'Al Huzaifa',
+  metadataBase: new URL('https://signaturepartners.alhuzaifa.com'),
+  title: 'Signature Partners Card | Al Huzaifa',
+  description:
+    'Join the Al Huzaifa Signature Partners Card — exclusive privileges, preferred commissions, and priority access for trusted brokers and design partners. Apply for partnership today.',
   keywords: [
-    'interior design Dubai',
-    'luxury interior design UAE',
-    'hospitality interior design',
-    'bespoke villa interiors',
-    'commercial interior design Dubai',
-    'F&B restaurant design',
-    'residential interior design Dubai',
-    'turnkey interior fit-out',
+    'Al Huzaifa Signature Partners Card',
+    'Al Huzaifa partner program',
+    'broker partnership Dubai',
+    'design partner program UAE',
+    'preferred commission for brokers',
+    'real estate broker rewards Dubai',
+    'property collaboration UAE',
+    'luxury partner program Dubai',
+    'Al Huzaifa Properties',
+    'Al Huzaifa furniture',
     'Al Huzaifa Design Studio',
-    'design studio Dubai',
-    'hotel interior design',
-    'luxury apartment interiors',
+    'become a signature partner',
   ],
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
@@ -51,15 +56,17 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
   },
   openGraph: {
-    title: 'Al Huzaifa',
-    description: 'Al Huzaifa',
+    title: 'Signature Partners Card | Al Huzaifa',
+    description:
+      'Exclusive privileges, preferred commissions, and priority access for trusted brokers and design partners. Become an Al Huzaifa Signature Partner.',
+    url: 'https://signaturepartners.alhuzaifa.com',
     siteName: 'Al Huzaifa',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Al Huzaifa',
+        alt: 'Al Huzaifa Signature Partners Card',
       },
     ],
     locale: 'en_AE',
@@ -67,8 +74,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Al Huzaifa',
-    description: 'Al Huzaifa',
+    title: 'Signature Partners Card | Al Huzaifa',
+    description:
+      'Exclusive privileges, preferred commissions, and priority access for trusted brokers and design partners. Become an Al Huzaifa Signature Partner.',
     images: ['/og-image.png'],
   },
   robots: {
