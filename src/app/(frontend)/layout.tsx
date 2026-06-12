@@ -3,6 +3,7 @@ import React from 'react'
 import { Poppins } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -87,12 +88,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${poppins.variable} ${ppHatton.variable} ${modernline.variable}`}
-    >
+    <html lang="en" className={`${poppins.variable} ${ppHatton.variable} ${modernline.variable}`}>
       <body>
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   )
