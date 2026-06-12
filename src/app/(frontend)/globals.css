@@ -7,6 +7,7 @@
   --fs-42: clamp(1.25rem, 1.39vi + 0.95rem, 2.63rem);
   --fs-46: clamp(1.5rem, 1.39vi + 1.2rem, 2.88rem);
   --fs-32: clamp(1.25rem, 0.76vi + 1.09rem, 2rem);
+  --fs-40: clamp(1.25rem, 1.27vi + 0.98rem, 2.5rem);
 }
 
 * {

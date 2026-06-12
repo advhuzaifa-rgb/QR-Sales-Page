@@ -1,6 +1,5 @@
 'use client'
 import React, { useState, useRef } from 'react'
-
 import Image from 'next/image'
 import styles from './Landing.module.css'
 import Popup from '../Contact/Popup'
@@ -17,15 +16,17 @@ const Landing = () => {
 
   return (
     <div className={styles.main} ref={rootRef}>
-      <div className={styles.content}>
+      <div className={styles.logoRow}>
         <Image className={styles.logo} src={logo} alt="Al Huzaifa Properties" priority />
+      </div>
 
-        <div className={styles.row}>
+      <div className={styles.body}>
+        <div className={styles.hero}>
           <div className={styles.left}>
             <div className={styles.intro}>
               <p className={styles.eyebrow}>A PRIVILEGED INVITATION</p>
               <h1 className={styles.heading}>
-                The <span className={styles.script}>Signature</span> Partner Card
+                The <span className={styles.script}>Signature</span> Partners Card
               </h1>
             </div>
 
@@ -54,15 +55,22 @@ const Landing = () => {
             </div>
           </div>
 
-          <div className={styles.right}>
-            <Image className={styles.card} src={card} alt="Signature Partners Card" priority />
-            <div className={styles.shaping}>
-              <p className={styles.shapingMain}>
-                50 years of <span className={styles.script}>Shaping</span>
-              </p>
-              <p className={styles.shapingSub}>the way you live</p>
-            </div>
-          </div>
+        <div className={styles.cardWrap}>
+  <Image
+    className={styles.card}
+    src={card}
+    alt="Signature Partners Card"
+    priority
+    style={{ borderRadius: '10px' }}
+  />
+</div>
+        </div>
+
+        <div className={styles.shaping}>
+          <p className={styles.shapingMain}>
+            50 years of <span className={styles.script}>Shaping</span>
+          </p>
+          <p className={styles.shapingSub}>the way you live</p>
         </div>
       </div>
 
