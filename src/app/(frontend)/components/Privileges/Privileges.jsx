@@ -4,7 +4,7 @@ import styles from './Privileges.module.css'
 const CARDS = [
   {
     title: 'Furniture Collections',
-    badge: '8-10% Commission',
+    badge: '10% Commission',
     desc: "Earn a preferred commission across Al Huzaifa's curated furniture collections. Access timeless designs, signature collections, and premium furnishings trusted by discerning homeowners and designers.",
   },
   {

@@ -18,7 +18,7 @@ const World = () => {
 
                 </div>
                  <div className={styles.one}>
-                    <h4>8-10%</h4>
+                    <h4>10%</h4>
                     <p>Partner commission</p>
 
                 </div>
